@@ -136,4 +136,4 @@ _Для большего кол-ва информации перейдите в 
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
 [product-screenshot]: images/screenshot.png
-[license-url]: LICENSE.txt
+[license-url]: https://github.com/AuthFailed/nCoV-tgbot/blob/master/LICENSE.txt
