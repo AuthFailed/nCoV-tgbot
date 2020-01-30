@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/AuthFailed/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/icon.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Corona Virus Stats bot</h3>
@@ -136,4 +136,4 @@ _Для большего кол-ва информации перейдите в 
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
 [product-screenshot]: images/screenshot.png
-[license-url]: license.txt
+[license-url]: LICENSE.txt
