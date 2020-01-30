@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/CoronaVirusStats.iml" filepath="$PROJECT_DIR$/.idea/CoronaVirusStats.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sibsutis-timetable/.idea/sibsutis-timetable.iml" filepath="$PROJECT_DIR$/../sibsutis-timetable/.idea/sibsutis-timetable.iml" />
+    </modules>
+  </component>
+</project>
