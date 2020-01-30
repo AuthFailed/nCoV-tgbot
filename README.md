@@ -15,8 +15,6 @@
   <p align="center">
     Удобное отслеживание статистики по инфицированным, вылечившимся и умерших от 2019-nCoV!
     <br />
-    <a href="https://github.com/AuthFailed/Best-README-Template"><strong>Документация »</strong></a>
-    <br />
     <br />
     <a href="https://github.com/AuthFailed/Best-README-Template">Демо</a>
     ·
@@ -136,4 +134,5 @@ _Для большего кол-ва информации перейдите в 
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
 [product-screenshot]: images/screenshot.png
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
 [license-url]: https://github.com/AuthFailed/nCoV-tgbot/blob/master/LICENSE.txt
