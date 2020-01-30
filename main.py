@@ -24,8 +24,6 @@ async def menu_message(msg: Message):
 @dp.callback_query_handler(lambda _call: True)
 async def handle_callbacks(call: CallbackQuery):
     """Отлавливаем кэллбэки телеграма."""
-    chat_id = call.message.chat.id
-    username = call.from_user.username
 
     if call.data == "current_stats":
         info = info_handler.get_main_info()
@@ -44,11 +42,11 @@ async def handle_callbacks(call: CallbackQuery):
     elif call.data == "quarantined_cities":
         table = info_handler.get_table_cities()
         answer_message = "*Города на карантине*\n(Город\t\t|\t\t дата закрытия\t\t|\t\tНаселение)__\n\n"
-        for i in range(len(table)-1):
+        for i in range(len(table) - 1):
             answer_message += f"{table[i][0]} - {table[i][1]} - {table[i][2]}\n"
         await call.message.edit_text(
-            answer_message+"__",
-            reply_markup=kb.info_menu())
+            answer_message + "__",
+            reply_markup=kb.main_menu())
         await call.answer()
     elif call.data == "disease_forecast":
         table = info_handler.disease_forecast()
@@ -64,22 +62,22 @@ async def handle_callbacks(call: CallbackQuery):
         await call.answer()
     elif call.data == "back_to_home":
         await call.message.edit_text("Используйте *кнопки ниже*:",
-                               reply_markup=kb.main_menu())
+                                     reply_markup=kb.main_menu())
         await call.answer()
 
 
 @dp.inline_handler()
 async def inline_stats(inline_query: InlineQuery):
     info = info_handler.get_main_info()
-    text =  (f"*Статистика 2019-nCoV*:\n\n"
-    f"Зараженных ☣️: *{info['Infected']}*\n\n"
-    f"На подозрении ❓: *{info['Possible']}*\n\n"
-    f"На карантине ☢️: *{info['Quarantine']} ({info['Quarantined_Cities']} городов)\n\n*"
-    f"Вылечившихся 💊: *{info['Recovered']}*\n\n"
-    f"Смерти ☠️: *{info['Deaths']}*\n\n"
-    f"_Смертность составляет {info['Death_Rate']}%_\n"
-             
-    f"Последнее обновление: *{info['Date']} MSK*")
+    text = (f"*Статистика 2019-nCoV*:\n\n"
+            f"Зараженных ☣️: *{info['Infected']}*\n\n"
+            f"На подозрении ❓: *{info['Possible']}*\n\n"
+            f"На карантине ☢️: *{info['Quarantine']} ({info['Quarantined_Cities']} городов)\n\n*"
+            f"Вылечившихся 💊: *{info['Recovered']}*\n\n"
+            f"Смерти ☠️: *{info['Deaths']}*\n\n"
+            f"_Смертность составляет {info['Death_Rate']}%_\n"
+
+            f"Последнее обновление: *{info['Date']} MSK*")
     input_content = InputTextMessageContent(text)
     item = InlineQueryResultArticle(
         id="1", title="2019-nCoV stats", input_message_content=input_content
@@ -89,7 +87,6 @@ async def inline_stats(inline_query: InlineQuery):
 
 # @dp.errors_handler()
 # async def error_handler():
-
 
 
 if __name__ == "__main__":
