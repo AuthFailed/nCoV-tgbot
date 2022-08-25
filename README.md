@@ -16,11 +16,11 @@
     Удобное отслеживание статистики по инфицированным, вылечившимся и умерших от 2019-nCoV!
     <br />
     <br />
-    <a href="https://github.com/AuthFailed/Best-README-Template">Демо</a>
+    <a href="https://t.me/NovelCoV_bot">Демо</a>
     ·
-    <a href="https://github.com/AuthFailed/Best-README-Template/issues">Зарепортить</a>
+    <a href="https://github.com/AuthFailed/nCoV-tgbot/issues">Зарепортить</a>
     ·
-    <a href="https://github.com/AuthFailed/Best-README-Template/issues">Запросить функцию</a>
+    <a href="https://github.com/AuthFailed/nCoV-tgbot/issues">Запросить функцию</a>
   </p>
 </p>
 
